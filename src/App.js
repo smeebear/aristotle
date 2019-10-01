@@ -1,9 +1,13 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import NavBar from './components/NavBar'
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 function App() {
   return (
+    <Router>
+    <NavBar title={ "Aristotle" }/>
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
@@ -20,6 +24,7 @@ function App() {
         </a>
       </header>
     </div>
+    </Router>
   );
 }
 
