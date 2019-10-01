@@ -10,8 +10,8 @@ import Drawer from '@material-ui/core/Drawer';
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import Home from '@material-ui/icons/Home';
-import Phone from '@material-ui/icons/Phone';
 import Favorite from '@material-ui/icons/FavoriteBorderRounded';
+import ChatBubbleOutline from '@material-ui/icons/ChatBubbleOutline';
 import AssignmentIcon from '@material-ui/icons/Assignment';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
@@ -82,7 +82,7 @@ export default function NavBar(props) {
       </List>
       <List>
         <ListItem button component={Link} to='/contact'>
-          <ListItemIcon><Phone /></ListItemIcon>
+          <ListItemIcon><ChatBubbleOutline /></ListItemIcon>
           <ListItemText primary={'Contact'} />
         </ListItem>
       </List>
