@@ -17,27 +17,35 @@ import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
+import { textAlign } from '@material-ui/system';
 
 const useStyles = makeStyles(theme => ({
   root: {
     flexGrow: 1,
+    color: "#000000",
   },
   menuButton: {
     marginRight: theme.spacing(2),
+    color: "#e0e0e0",
   },
   title: {
     flexGrow: 1,
+    color: "#e0e0e0",
   },
   list: {
     width: 250,
-  }
+    color: "#000000",
+  },
+  bar: {
+      color: "#212121",
+  },
 }));
 
 const MenuHead = styled.p`
   font-family: Gill Sans Extrabold, sans-serif;
   font-size: 20pt;
   padding: 0;
-  margin-left: 20px
+  text-align: center;
 `
 
 
@@ -90,13 +98,13 @@ export default function NavBar(props) {
   );
 
   return (
-      <AppBar position="static">
-        <Toolbar>
-          <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu" onClick={toggleDrawer('left', true)}>
+      <AppBar position="static" className={classes.bar} style={{ background: '#212121' }}>
+        <Toolbar style={{color: "#212121"}}>
+          <IconButton edge="start" className={classes.menuButton} color="default" aria-label="menu" onClick={toggleDrawer('left', true)}>
             <MenuIcon />
           </IconButton>
-          <Typography variant="h6" className={classes.title}>
-            {/* { props.title } */}
+          <Typography variant="h2" style={{textAlign: 'center', fontFamily: "Comfortaa", fontSize: "42px"}} className={classes.title}>
+            {"Aristotle"}
           </Typography>
         </Toolbar>
         <Drawer open={state.left} onClose={toggleDrawer('left', false)} className={ classes.drawer }>
