@@ -58,7 +58,7 @@ export default class Contact extends Component {
                     <div style={{width: '100%', textAlign: 'center', paddingBottom: '10px'}}>
                         <TextField
                             id="outlined-multiline-static"
-                            label="Contact us!"
+                            label="Message"
                             multiline
                             rows="6"
                             defaultValue=""

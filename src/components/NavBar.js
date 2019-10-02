@@ -82,7 +82,7 @@ export default function NavBar(props) {
         </ListItem>
       </List>
       <List>
-        <ListItem button component={Link} to='/about'>
+        <ListItem button component={Link} to='/'>
           <ListItemIcon><AssignmentIcon /></ListItemIcon>
           <ListItemText primary={'Example Quiz'} />
         </ListItem>
@@ -97,20 +97,18 @@ export default function NavBar(props) {
   );
 
   return (
-      // <div style={{textAlign: 'center'}}>
-      <AppBar position="static" className={classes.bar} style={{ background: '#212121', textAlign: 'center' }}>
-        <Toolbar style={{color: "#212121"}}>
-          <IconButton edge="start" className={classes.menuButton} color="default" aria-label="menu" onClick={toggleDrawer('left', true)}>
-            <MenuIcon />
-          </IconButton>
-          <Typography variant="h2" style={{fontFamily: "Comfortaa", fontSize: "42px"}} className={classes.title}>
-            {"Aristotle"}
-          </Typography>
-        </Toolbar>
-        <Drawer open={state.left} onClose={toggleDrawer('left', false)} className={ classes.drawer }>
-          {sideList('left')}
-        </Drawer>
-      </AppBar>
-      // </div>
+    <AppBar position="static" className={classes.bar} style={{ background: '#212121', textAlign: 'center' }}>
+      <Toolbar style={{color: "#212121"}}>
+        <IconButton edge="start" className={classes.menuButton} color="default" aria-label="menu" onClick={toggleDrawer('left', true)}>
+          <MenuIcon />
+        </IconButton>
+        <Typography variant="h2" style={{fontFamily: "Comfortaa", fontSize: "42px"}} className={classes.title}>
+          {"Aristotle"}
+        </Typography>
+      </Toolbar>
+      <Drawer open={state.left} onClose={toggleDrawer('left', false)} className={ classes.drawer }>
+        {sideList('left')}
+      </Drawer>
+    </AppBar>
   );
 }

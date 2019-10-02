@@ -58,7 +58,7 @@ export default class ExampleQuiz extends Component {
                 <MultipleChoice question={this.state.q2.question} answers={this.state.q2.answers} />
                 <RadioChoice question={this.state.q3.question} answers={this.state.q3.answers} />
                 <MultipleChoice question={this.state.q4.question} answers={this.state.q4.answers} />
-                <div style={{paddingLeft:"615px", paddingBottom: "30px", paddingTop: "30px"}}>
+                <div style={{textAlign: 'center', paddingBottom: "30px", paddingTop: "30px"}}>
                     <Button variant="contained" component={Link} to='/results'>
                         Submit
                     </Button>
