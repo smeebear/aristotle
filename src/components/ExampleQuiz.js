@@ -51,7 +51,7 @@ export default class ExampleQuiz extends Component {
     render() {
         return (
             <>
-                <Typography variant="h3" style={{ paddingTop: "50px", paddingLeft:"500px", paddingBottom: "20px", fontFamily: "Comfortaa", fontSize: "48px"}} >
+                <Typography variant="h3" style={{ paddingTop: "50px", textAlign: 'center', paddingBottom: "20px", fontFamily: "Comfortaa", fontSize: "48px"}} >
                 {"Example Quiz"}
                 </Typography>
                 <RadioChoice question={this.state.q1.question} answers={this.state.q1.answers} />
