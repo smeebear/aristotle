@@ -27,6 +27,24 @@ export default class ExampleQuiz extends Component {
                     a3: "Briana",
                     a4: "Garrett"
                 }
+            },
+            q3: {
+                question: "Who's the best main?",
+                answers: {
+                    a1: "Bowser",
+                    a2: "Peach",
+                    a3: "Kirby",
+                    a4: "Link"
+                }
+            },
+            q4: {
+                question: "Which of the following chronic medical issues have I been diagnosed with?",
+                answers: {
+                    a1: "IBS",
+                    a2: "Back Pain",
+                    a3: "Heart Condition",
+                    a4: "Diabeetus"
+                }
             }
         }
     }
@@ -38,8 +56,8 @@ export default class ExampleQuiz extends Component {
                 </Typography>
                 <RadioChoice question={this.state.q1.question} answers={this.state.q1.answers} />
                 <MultipleChoice question={this.state.q2.question} answers={this.state.q2.answers} />
-                <RadioChoice question={this.state.q1.question} answers={this.state.q1.answers} />
-                <MultipleChoice question={this.state.q2.question} answers={this.state.q2.answers} />
+                <RadioChoice question={this.state.q3.question} answers={this.state.q3.answers} />
+                <MultipleChoice question={this.state.q4.question} answers={this.state.q4.answers} />
                 <div style={{paddingLeft:"615px", paddingBottom: "30px", paddingTop: "30px"}}>
                     <Button variant="contained" component={Link} to='/results'>
                         Submit
