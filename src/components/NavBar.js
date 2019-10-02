@@ -17,7 +17,6 @@ import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
-import { textAlign } from '@material-ui/system';
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -98,7 +97,7 @@ export default function NavBar(props) {
   );
 
   return (
-      <AppBar position="static" className={classes.bar} style={{ background: '#212121' }}>
+      <AppBar position="static" className={classes.bar} style={{ background: '#212121', textAlign: 'center' }}>
         <Toolbar style={{color: "#212121"}}>
           <IconButton edge="start" className={classes.menuButton} color="default" aria-label="menu" onClick={toggleDrawer('left', true)}>
             <MenuIcon />
