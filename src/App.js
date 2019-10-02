@@ -11,10 +11,12 @@ function App() {
   return (
     <Router>
       <NavBar title={ "Aristotle" } />
+      <div style={{margin: 'auto', maxWidth: '1000px'}} >
       <Route exact path='/' component={ExampleQuiz} />
       <Route path='/results' component={ResultsVert} />
       <Route path='/contact' component={Contact} />
       <Route path='/thanks' component={ThankYou} />
+      </div>
     </Router>
   );
 }
