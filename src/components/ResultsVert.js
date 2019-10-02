@@ -6,10 +6,11 @@ import TableCell from '@material-ui/core/TableCell';
 import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 import Paper from '@material-ui/core/Paper';
+import Grid from '@material-ui/core/Grid';
 
 const useStyles = makeStyles(theme => ({
   root: {
-    width: '40%',
+    width: '60%',
     marginTop: theme.spacing(1),
     marginLeft: 'auto',
     marginRight: 'auto',
@@ -29,6 +30,7 @@ export default function ResultsPage() {
     const classes = useStyles();
     return (
         <div style={{paddingTop: '75px'}}>
+            <Grid alignContent='center'>
             <Paper className={classes.root}>
                 <div style={{textAlign: 'center'}} >
                 <Table className={classes.table}>
@@ -71,6 +73,7 @@ export default function ResultsPage() {
                 </Table>
                 </div>
             </Paper>
+            </Grid>
         </div>
     )
 }
