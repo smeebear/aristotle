@@ -19,14 +19,14 @@ export class MultipleChoice extends Component {
                 </Typography>
                 <div style={{paddingLeft: "50px", paddingTop:"10px"}}>
                     <MuiThemeProvider theme={theme}>
-                    <FormControl component="fieldset">
-                    <RadioGroup aria-label="fruits" name="customized-radios">
-                        <FormControlLabel value="lemons" control={<Radio />} label="Bananas" />
-                        <FormControlLabel value="male" control={<Radio />} label="Oranges" />
-                        <FormControlLabel value="other" control={<Radio />} label="Lemons" />
-                        <FormControlLabel value="blah" control={<Radio />} label="Watermelons" />
-                    </RadioGroup>
-                    </FormControl>
+                        <FormControl component="fieldset">
+                        <RadioGroup aria-label="fruits" name="customized-radios">
+                            <FormControlLabel value={this.props.answers.a1} control={<Radio />} label={this.props.answers.a1} />
+                            <FormControlLabel value={this.props.answers.a2} control={<Radio />} label={this.props.answers.a2} />
+                            <FormControlLabel value={this.props.answers.a3} control={<Radio />} label={this.props.answers.a3} />
+                            <FormControlLabel value={this.props.answers.a4} control={<Radio />} label={this.props.answers.a4} />
+                        </RadioGroup>
+                        </FormControl>
                     </MuiThemeProvider>
                 </div>
             </div>
