@@ -18,7 +18,11 @@ const useStyles = makeStyles(theme => ({
   },
   table: {
     // minWidth: 650,
+    width: '100%'
   },
+  cell: {
+      width: '50%'
+  }
 }));
 
 export default function ResultsPage() {
@@ -30,8 +34,8 @@ export default function ResultsPage() {
                 <Table className={classes.table}>
                     <TableHead>
                         <TableRow>
-                            <TableCell align='center' >Learning Style</TableCell>
-                            <TableCell align='center' >Score</TableCell>
+                            <TableCell align='center' className={classes.cell} >Learning Style</TableCell>
+                            <TableCell align='center' className={classes.cell} >Score</TableCell>
                         </TableRow>
                     </TableHead>
                     <TableBody>
