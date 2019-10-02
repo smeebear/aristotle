@@ -10,10 +10,10 @@ export default class Contact extends Component {
             paddingTop: "5px",
             textAlign: 'center'
         }
-        const multi = {
-            textAlign: 'center',
-            width: '35%'
-        }
+        // const multi = {
+        //     textAlign: 'center',
+        //     width: '35%'
+        // }
         return (
             <>
                 <Typography variant="h3" style={{ paddingTop: "50px", textAlign: 'center', paddingBottom: "20px", fontFamily: "Comfortaa", fontSize: "38px"}} >

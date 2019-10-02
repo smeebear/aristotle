@@ -24,7 +24,7 @@ const useStyles = makeStyles(theme => ({
     color: "#000000",
   },
   menuButton: {
-    marginRight: theme.spacing(2),
+    marginRight: theme.spacing(-2),
     color: "#e0e0e0",
   },
   title: {
@@ -97,7 +97,7 @@ export default function NavBar(props) {
   );
 
   return (
-      <div style={{textAlign: 'center'}}>
+      // <div style={{textAlign: 'center'}}>
       <AppBar position="static" className={classes.bar} style={{ background: '#212121', textAlign: 'center' }}>
         <Toolbar style={{color: "#212121"}}>
           <IconButton edge="start" className={classes.menuButton} color="default" aria-label="menu" onClick={toggleDrawer('left', true)}>
@@ -111,6 +111,6 @@ export default function NavBar(props) {
           {sideList('left')}
         </Drawer>
       </AppBar>
-      </div>
+      // </div>
   );
 }
