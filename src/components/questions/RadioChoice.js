@@ -4,7 +4,7 @@ import { RadioGroup, FormControlLabel, FormControl, Radio } from '@material-ui/c
 import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 
 
-export class MultipleChoice extends Component {
+export class RadioChoice extends Component {
     render() {
         const theme = createMuiTheme({
             palette: {
@@ -14,7 +14,7 @@ export class MultipleChoice extends Component {
           });
         return (
             <div className={this.props.questionNum}>
-                <Typography variant="h2" style={{fontFamily: "Source Sans Pro", fontSize: "25px", paddingTop: "20px", paddingLeft: '20px'}}>
+                <Typography variant="h2" style={{fontFamily: "Source Sans Pro", fontSize: "25px", paddingTop: "30px", paddingLeft: '20px'}}>
                     {this.props.question}
                 </Typography>
                 <div style={{paddingLeft: "50px", paddingTop:"10px"}}>
@@ -34,4 +34,4 @@ export class MultipleChoice extends Component {
     }
 }
 
-export default MultipleChoice
+export default RadioChoice

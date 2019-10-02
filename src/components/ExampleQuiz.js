@@ -1,6 +1,9 @@
 import React, { Component } from 'react'
 import { Typography } from '@material-ui/core';
-import MultipleChoice from './MultipleChoice'
+import RadioChoice from './questions/RadioChoice';
+import MultipleChoice from './questions/MultipleChoice'
+import Button from '@material-ui/core/Button'
+import { Link } from 'react-router-dom';
 
 export default class ExampleQuiz extends Component {
 
@@ -30,10 +33,18 @@ export default class ExampleQuiz extends Component {
     render() {
         return (
             <>
-                <Typography variant="h3" style={{ paddingTop: "50px", paddingLeft:"500px", paddingBottom: "35px", fontFamily: "Comfortaa", fontSize: "48px"}} >
+                <Typography variant="h3" style={{ paddingTop: "50px", paddingLeft:"500px", paddingBottom: "20px", fontFamily: "Comfortaa", fontSize: "48px"}} >
                 {"Example Quiz"}
                 </Typography>
-                <MultipleChoice question={this.state.q1.question} answers={this.state.q1.answers} />
+                <RadioChoice question={this.state.q1.question} answers={this.state.q1.answers} />
+                <MultipleChoice question={this.state.q2.question} answers={this.state.q2.answers} />
+                <RadioChoice question={this.state.q1.question} answers={this.state.q1.answers} />
+                <MultipleChoice question={this.state.q2.question} answers={this.state.q2.answers} />
+                <div style={{paddingLeft:"615px", paddingBottom: "30px", paddingTop: "30px"}}>
+                    <Button variant="contained" component={Link} to='/results'>
+                        Submit
+                    </Button>
+                </div>
             </>
         )
     }
