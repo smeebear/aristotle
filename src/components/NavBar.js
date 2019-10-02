@@ -24,7 +24,7 @@ const useStyles = makeStyles(theme => ({
     color: "#000000",
   },
   menuButton: {
-    marginRight: theme.spacing(-2),
+    marginRight: theme.spacing(-3),
     color: "#e0e0e0",
   },
   title: {

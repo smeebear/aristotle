@@ -12,17 +12,20 @@ const useStyles = makeStyles(theme => ({
     width: '80%',
     marginTop: theme.spacing(1),
     overflowX: 'auto',
+    textAlign: 'center',
   },
   table: {
     minWidth: 650,
+    textAlign: 'center'
   },
 }));
 
 export default function ResultsPage() {
     const classes = useStyles();
     return (
-        <div style={{paddingLeft: '245px', paddingTop: '100px'}}>
+        <div style={{textAlign: 'center', paddingTop: '75px', width: '100%'}}>
             <Paper className={classes.root}>
+                <div style={{textAlign: 'center'}} >
                 <Table className={classes.table}>
                     <TableHead>
                     <TableRow>
@@ -47,6 +50,7 @@ export default function ResultsPage() {
                         </TableRow>
                     </TableBody>
                 </Table>
+                </div>
             </Paper>
         </div>
     )

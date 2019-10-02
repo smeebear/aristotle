@@ -10,10 +10,10 @@ export default class Contact extends Component {
             paddingTop: "5px",
             textAlign: 'center'
         }
-        // const multi = {
-        //     textAlign: 'center',
-        //     width: '35%'
-        // }
+        const multi = {
+            textAlign: 'center',
+            width: '35%'
+        }
         return (
             <>
                 <Typography variant="h3" style={{ paddingTop: "50px", textAlign: 'center', paddingBottom: "20px", fontFamily: "Comfortaa", fontSize: "38px"}} >
@@ -26,7 +26,8 @@ export default class Contact extends Component {
                             label="Name"
                             defaultValue=""
                             margin="normal"
-                            variant="outlined"
+                            autoComplete='name'
+                            // variant="outlined"
                             // style={style}
                         />
                     </div>
@@ -37,7 +38,8 @@ export default class Contact extends Component {
                             label="Email"
                             defaultValue=""
                             margin="normal"
-                            variant="outlined"
+                            autoComplete='email'
+                            // variant="outlined"
                             // style={style}
                         />
                     </div>
@@ -48,11 +50,12 @@ export default class Contact extends Component {
                             label="Phone Number"
                             defaultValue=""
                             margin="normal"
-                            variant="outlined"
+                            autoComplete='tel'
+                            // variant="outlined"
                             // style={style}
                         />
                     </div>
-                    <div style={style}>
+                    <div style={{width: '100%', textAlign: 'center', paddingBottom: '10px'}}>
                         <TextField
                             id="outlined-multiline-static"
                             label="Contact us!"
@@ -60,8 +63,9 @@ export default class Contact extends Component {
                             rows="6"
                             defaultValue=""
                             margin="normal"
+                            autoComplete='off'
                             variant="outlined"
-                            // style={style}
+                            style={multi}
                         />
                     </div>
                     <div style={style}>
