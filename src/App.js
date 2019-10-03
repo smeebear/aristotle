@@ -9,6 +9,7 @@ import ThankYou from './components/ThankYou';
 import Parent from './components/Parent'
 import Teacher from './components/Teacher'
 import Learning from './components/learning/Learning'
+import Video from './components/learning/Video';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
       <Route path='/parentdash' component={Parent} />
       <Route path='/teacherdash' component={Teacher} />
       <Route path='/learning' component={Learning} />
+      <Route path='/learning/visual' component={Video} />
       </div>
     </Router>
   );
