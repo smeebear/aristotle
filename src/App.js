@@ -7,6 +7,7 @@ import ResultsVert from './components/ResultsVert';
 import Contact from './components/Contact';
 import ThankYou from './components/ThankYou';
 import Parent from './components/Parent'
+import Teacher from './components/Teacher'
 
 function App() {
   return (
@@ -17,7 +18,8 @@ function App() {
       <Route path='/results' component={ResultsVert} />
       <Route path='/contact' component={Contact} />
       <Route path='/thanks' component={ThankYou} />
-      <Route exact path='/parentdash' component={Parent} />
+      <Route path='/parentdash' component={Parent} />
+      <Route path='/teacherdash' component={Teacher} />
       </div>
     </Router>
   );

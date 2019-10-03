@@ -17,7 +17,7 @@ export default class Parent extends Component {
                 <Typography variant="h3" style={{ paddingTop: "5px", textAlign: 'center', paddingBottom: "20px", fontFamily: "Comfortaa", fontSize: "20px"}} >
                     {"This is how " + this.state.name + " has been doing..."}
                 </Typography>
-                <Typography variant="h3" style={{ paddingTop: "50px", textAlign: 'center', paddingBottom: "20px", fontFamily: "Comfortaa", fontSize: "72px"}} >
+                <Typography variant="h3" style={{ paddingTop: "175px", textAlign: 'center', paddingBottom: "20px", fontFamily: "Comfortaa", fontSize: "72px"}} >
                     {"not well, he's an idiot"}
                 </Typography>
             </div>
