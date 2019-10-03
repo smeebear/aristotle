@@ -17,7 +17,7 @@ function App() {
       <Route path='/results' component={ResultsVert} />
       <Route path='/contact' component={Contact} />
       <Route path='/thanks' component={ThankYou} />
-      <Route path='/parentdash' component={Parent} />
+      <Route exact path='/parentdash' component={Parent} />
       </div>
     </Router>
   );
