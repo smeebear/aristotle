@@ -8,6 +8,7 @@ import Contact from './components/Contact';
 import ThankYou from './components/ThankYou';
 import Parent from './components/Parent'
 import Teacher from './components/Teacher'
+import Learning from './components/learning/Learning'
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
       <Route path='/thanks' component={ThankYou} />
       <Route path='/parentdash' component={Parent} />
       <Route path='/teacherdash' component={Teacher} />
+      <Route path='/learning' component={Learning} />
       </div>
     </Router>
   );
