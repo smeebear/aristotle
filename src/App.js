@@ -10,6 +10,7 @@ import Parent from './components/Parent'
 import Teacher from './components/Teacher'
 import Learning from './components/learning/Learning'
 import Video from './components/learning/Video';
+import Reading from './components/learning/Reading';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
       <Route path='/teacherdash' component={Teacher} />
       <Route path='/learning' component={Learning} />
       <Route path='/learning/visual' component={Video} />
+      <Route path='/learning/aural' component={Reading} />
       </div>
     </Router>
   );

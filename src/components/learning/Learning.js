@@ -18,7 +18,7 @@ export default function Learning() {
                 <Grid item alignContent='center' >
                     <ButtonGroup fullWidth aria-label="full width outlined button group">
                     <Button component={Link} to='/learning/visual' >Visual</Button>
-                    <Button component={Link} to='/results' >Aural</Button>
+                    <Button component={Link} to='/learning/aural' >Aural</Button>
                     <Button component={Link} to='/results' >Verbal</Button>
                     <Button component={Link} to='/results' >Physical</Button>
                     <Button component={Link} to='/results' >Logical</Button>
