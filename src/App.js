@@ -11,6 +11,7 @@ import Teacher from './components/Teacher'
 import Learning from './components/learning/Learning'
 import Video from './components/learning/Video';
 import Reading from './components/learning/Reading';
+import Speaking from './components/learning/Speaking';
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
       <Route path='/learning' component={Learning} />
       <Route path='/learning/visual' component={Video} />
       <Route path='/learning/aural' component={Reading} />
+      <Route path='/learning/verbal' component={Speaking} />
       </div>
     </Router>
   );
