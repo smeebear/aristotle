@@ -16,15 +16,65 @@ export default class Parent extends Component {
         super(props);
         this.state = {
             name: 'Sam',
+            data: {
+                vi: 43,
+                a: 159,
+                ve: 6,
+                p: 24,
+                l: 4,
+                soc: 19,
+                sol: 290
+            }
         }
     }
 
-    handleChange(event) {
+    handleChange = (event) => {
         var name = event;
         this.setState({
             name: name
         });
     };
+
+    handleChild = (name) => {
+        var data = {}
+        if (name === 'Sam') {
+            data = {
+                vi: 43,
+                a: 159,
+                ve: 6,
+                p: 24,
+                l: 4,
+                soc: 19,
+                sol: 290,
+                avg: 97
+            }
+        } else if (name === 'Matt') {
+            data = {
+                vi: 43,
+                a: 15,
+                ve: 6,
+                p: 24,
+                l: 4,
+                soc: 19,
+                sol: 290,
+                avg: 60
+            }
+        } else if (name === 'Briana') {
+            data = {
+                vi: 43,
+                a: 19,
+                ve: 6,
+                p: 24,
+                l: 4,
+                soc: 19,
+                sol: 290,
+                avg: 73
+            }
+        }
+        return (
+            <Child data={data} />
+        )
+    }
 
     render(){
         return (
@@ -44,14 +94,13 @@ export default class Parent extends Component {
                     <option value={'Briana'}>Briana</option>
                     </Select>
                 </FormControl>
-                <Typography variant="h3" style={{ paddingTop: "40px", textAlign: 'center', paddingBottom: "10px", fontFamily: "Comfortaa", fontSize: "48px"}} >
+                <Typography variant="h3" style={{ paddingTop: "20px", textAlign: 'center', paddingBottom: "10px", fontFamily: "Comfortaa", fontSize: "48px"}} >
                 {"Hello, parent of " + this.state.name}
                 </Typography>
                 <Typography variant="h3" style={{ paddingTop: "5px", textAlign: 'center', paddingBottom: "20px", fontFamily: "Comfortaa", fontSize: "20px"}} >
                     {"This is how "+ this.state.name + " has been doing..."}
                 </Typography>
-
-                <Child name={this.state.name} />
+                <>{this.handleChild(this.state.name)}</>
             </div>
         )
     }

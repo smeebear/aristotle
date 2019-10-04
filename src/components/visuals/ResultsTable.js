@@ -10,8 +10,8 @@ import Grid from '@material-ui/core/Grid';
 
 const useStyles = makeStyles(theme => ({
   root: {
-    width: '60%',
     marginTop: theme.spacing(1),
+    // width: '60%',
     marginLeft: 'auto',
     marginRight: 'auto',
     textAlign: 'center',
@@ -27,7 +27,7 @@ const useStyles = makeStyles(theme => ({
 export default function ResultsPage(props) {
     const classes = useStyles();
     return (
-        <div style={{paddingTop: '75px'}}>
+        <div style={{paddingTop: '25px'}}>
             <Grid alignContent='center'>
             <Paper className={classes.root}>
                 <div style={{textAlign: 'center'}} >
@@ -45,13 +45,13 @@ export default function ResultsPage(props) {
                     </TableHead>
                     <TableBody>
                         <TableRow>
-                            <TableCell align="center">43</TableCell>
-                            <TableCell align="center">159</TableCell>
-                            <TableCell align="center">6</TableCell>
-                            <TableCell align="center">24</TableCell>
-                            <TableCell align="center">4</TableCell>
-                            <TableCell align="center">19</TableCell>
-                            <TableCell align="center">290</TableCell>
+                            <TableCell align="center">{props.data.vi}</TableCell>
+                            <TableCell align="center">{props.data.a}</TableCell>
+                            <TableCell align="center">{props.data.ve}</TableCell>
+                            <TableCell align="center">{props.data.p}</TableCell>
+                            <TableCell align="center">{props.data.l}</TableCell>
+                            <TableCell align="center">{props.data.soc}</TableCell>
+                            <TableCell align="center">{props.data.sol}</TableCell>
                         </TableRow>
                     </TableBody>
                 </Table>
