@@ -11,6 +11,7 @@ import Grid from '@material-ui/core/Grid';
 const useStyles = makeStyles(theme => ({
   root: {
     marginTop: theme.spacing(1),
+    // width: '60%',
     marginLeft: 'auto',
     marginRight: 'auto',
     textAlign: 'center',
@@ -26,7 +27,7 @@ const useStyles = makeStyles(theme => ({
 export default function ResultsPage(props) {
     const classes = useStyles();
     return (
-        <div style={{paddingTop: '75px'}}>
+        <div style={{paddingTop: '25px'}}>
             <Grid alignContent='center'>
             <Paper className={classes.root}>
                 <div style={{textAlign: 'center'}} >
