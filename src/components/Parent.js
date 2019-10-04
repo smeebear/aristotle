@@ -2,6 +2,7 @@ import Typography from '@material-ui/core/Typography';
 import React, { Component } from 'react';
 import FormControl from '@material-ui/core/FormControl';
 import Select from '@material-ui/core/Select';
+import Child from './Child';
 
 const formControl = {
     marginLeft: 'auto',
@@ -43,12 +44,14 @@ export default class Parent extends Component {
                     <option value={'Briana'}>Briana</option>
                     </Select>
                 </FormControl>
-                <Typography variant="h3" style={{ paddingTop: "50px", textAlign: 'center', paddingBottom: "10px", fontFamily: "Comfortaa", fontSize: "48px"}} >
+                <Typography variant="h3" style={{ paddingTop: "40px", textAlign: 'center', paddingBottom: "10px", fontFamily: "Comfortaa", fontSize: "48px"}} >
                 {"Hello, parent of " + this.state.name}
                 </Typography>
                 <Typography variant="h3" style={{ paddingTop: "5px", textAlign: 'center', paddingBottom: "20px", fontFamily: "Comfortaa", fontSize: "20px"}} >
                     {"This is how "+ this.state.name + " has been doing..."}
                 </Typography>
+
+                <Child name={this.state.name} />
             </div>
         )
     }
