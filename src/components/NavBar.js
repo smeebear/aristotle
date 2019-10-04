@@ -11,7 +11,10 @@ import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import Home from '@material-ui/icons/Home';
 import ChatBubbleOutline from '@material-ui/icons/ChatBubbleOutline';
+import EditOutlinedIcon from '@material-ui/icons/EditOutlined';
+import SupervisorAccountOutlinedIcon from '@material-ui/icons/SupervisorAccountOutlined';
 import AssignmentIcon from '@material-ui/icons/Assignment';
+import BookOutlinedIcon from '@material-ui/icons/BookOutlined';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
 import styled from 'styled-components';
@@ -89,6 +92,24 @@ export default function NavBar(props) {
         <ListItem button component={Link} to='/contact'>
           <ListItemIcon><ChatBubbleOutline /></ListItemIcon>
           <ListItemText primary={'Contact'} />
+        </ListItem>
+      </List>
+      <List>
+        <ListItem button component={Link} to='/learning'>
+          <ListItemIcon><EditOutlinedIcon /></ListItemIcon>
+          <ListItemText primary={'Learning'} />
+        </ListItem>
+      </List>
+      <List>
+        <ListItem button component={Link} to='/parentdash'>
+          <ListItemIcon><SupervisorAccountOutlinedIcon /></ListItemIcon>
+          <ListItemText primary={'Parent Dashboard'} />
+        </ListItem>
+      </List>
+      <List>
+        <ListItem button component={Link} to='/teacherdash'>
+          <ListItemIcon><BookOutlinedIcon /></ListItemIcon>
+          <ListItemText primary={'Teacher Dashboard'} />
         </ListItem>
       </List>
     </div>

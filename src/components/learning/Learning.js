@@ -20,8 +20,8 @@ export default function Learning() {
                     <Button component={Link} to='/learning/visual' >Visual</Button>
                     <Button component={Link} to='/learning/aural' >Aural</Button>
                     <Button component={Link} to='/learning/verbal' >Verbal</Button>
-                    <Button component={Link} to='/results' >Physical</Button>
-                    <Button component={Link} to='/results' >Logical</Button>
+                    <Button component={Link} to='/learning/physical' >Physical</Button>
+                    <Button component={Link} to='/learning/logical' >Logical</Button>
                     </ButtonGroup>
                 </Grid>
             </div>

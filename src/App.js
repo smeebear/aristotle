@@ -28,6 +28,8 @@ function App() {
       <Route path='/learning/visual' component={Video} />
       <Route path='/learning/aural' component={Reading} />
       <Route path='/learning/verbal' component={Speaking} />
+      <Route path='/learning/physical' component={Speaking} />
+      <Route path='/learning/logical' component={Reading} />
       </div>
     </Router>
   );
