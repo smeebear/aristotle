@@ -8,12 +8,15 @@ export default class Child extends Component {
     render() {
         return (
             <div style={{textAlign: 'center'}}>
-                <ResultsTable data={this.props.data} />
-                <Grid container spacing={2} style={{paddingTop: '50px'}} >
+                <Grid container spacing={2} style={{paddingTop: '25px'}} >
+                    <Grid item xs='8'>
+                    <ResultsTable data={this.props.data} />
+                    </Grid>
+                    <Grid item xs>
                     <Grid item xs>
                     <DonutChart 
-                        height='250'
-                        width='250'
+                        height='225'
+                        width='225'
                         legend={false}
                         data={[{
                             label: 'Child Average',
@@ -29,8 +32,8 @@ export default class Child extends Component {
                     </Grid>
                     <Grid item xs>
                     <DonutChart 
-                        height='250'
-                        width='250'
+                        height='225'
+                        width='225'
                         legend={false}
                         data={[{
                             label: 'Class Average',
@@ -43,6 +46,7 @@ export default class Child extends Component {
                         }]}
                         colors={['#7CFC00']}
                     />
+                    </Grid>
                     </Grid>
                 </Grid>
             </div>
