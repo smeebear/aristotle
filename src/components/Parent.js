@@ -2,6 +2,7 @@ import Typography from '@material-ui/core/Typography';
 import React, { Component } from 'react';
 import FormControl from '@material-ui/core/FormControl';
 import Select from '@material-ui/core/Select';
+import Child from './Child';
 
 const formControl = {
     marginLeft: 'auto',
@@ -15,13 +16,55 @@ export default class Parent extends Component {
         super(props);
         this.state = {
             name: 'Sam',
+            data: {
+                vi: 43,
+                a: 159,
+                ve: 6,
+                p: 24,
+                l: 4,
+                soc: 19,
+                sol: 290
+            }
         }
     }
 
     handleChange(event) {
         var name = event;
+        var data = {}
+        if (name === "Sam") {
+            data = {
+                vi: 43,
+                a: 159,
+                ve: 6,
+                p: 24,
+                l: 4,
+                soc: 19,
+                sol: 290
+            }
+        } else if (name === "Matt") {
+            data = {
+                vi: 43,
+                a: 159,
+                ve: 6,
+                p: 24,
+                l: 4,
+                soc: 19,
+                sol: 290
+            }
+        } else if (name === "Briana") {
+            data = {
+                vi: 43,
+                a: 159,
+                ve: 6,
+                p: 24,
+                l: 4,
+                soc: 19,
+                sol: 290
+            }
+        }
         this.setState({
-            name: name
+            name: name,
+            data: data
         });
     };
 
@@ -49,6 +92,7 @@ export default class Parent extends Component {
                 <Typography variant="h3" style={{ paddingTop: "5px", textAlign: 'center', paddingBottom: "20px", fontFamily: "Comfortaa", fontSize: "20px"}} >
                     {"This is how "+ this.state.name + " has been doing..."}
                 </Typography>
+                <Child data={this.state.data} />
             </div>
         )
     }
