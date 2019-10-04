@@ -28,10 +28,11 @@ export default class Parent extends Component {
         }
     }
 
-    handleChange(event) {
+    handleChange = (event) => {
         var name = event;
+        console.log(name)
         var data = {}
-        if (name === "Sam") {
+        if (name === 'Sam') {
             data = {
                 vi: 43,
                 a: 159,
@@ -41,20 +42,20 @@ export default class Parent extends Component {
                 soc: 19,
                 sol: 290
             }
-        } else if (name === "Matt") {
+        } else if (name === 'Matt') {
             data = {
                 vi: 43,
-                a: 159,
+                a: 15,
                 ve: 6,
                 p: 24,
                 l: 4,
                 soc: 19,
                 sol: 290
             }
-        } else if (name === "Briana") {
+        } else if (name === 'Briana') {
             data = {
                 vi: 43,
-                a: 159,
+                a: 19,
                 ve: 6,
                 p: 24,
                 l: 4,
@@ -66,6 +67,8 @@ export default class Parent extends Component {
             name: name,
             data: data
         });
+        console.log(data)
+        console.log(this.state.data)
     };
 
     render(){
