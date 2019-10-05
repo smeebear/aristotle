@@ -17,13 +17,14 @@ export default class Parent extends Component {
         this.state = {
             name: 'Sam',
             data: {
-                vi: 43,
-                a: 159,
-                ve: 6,
-                p: 24,
-                l: 4,
-                soc: 19,
-                sol: 290
+                vi: Math.floor(Math.random() * 100),
+                a: Math.floor(Math.random() * 100),
+                ve: Math.floor(Math.random() * 100),
+                p: Math.floor(Math.random() * 100),
+                l: Math.floor(Math.random() * 100),
+                soc: Math.floor(Math.random() * 100),
+                sol: Math.floor(Math.random() * 100),
+                avg: 97
             }
         }
     }
@@ -39,35 +40,35 @@ export default class Parent extends Component {
         var data = {}
         if (name === 'Sam') {
             data = {
-                vi: 43,
-                a: 159,
-                ve: 6,
-                p: 24,
-                l: 4,
-                soc: 19,
-                sol: 290,
+                vi: Math.floor(Math.random() * 100),
+                a: Math.floor(Math.random() * 100),
+                ve: Math.floor(Math.random() * 100),
+                p: Math.floor(Math.random() * 100),
+                l: Math.floor(Math.random() * 100),
+                soc: Math.floor(Math.random() * 100),
+                sol: Math.floor(Math.random() * 100),
                 avg: 97
             }
         } else if (name === 'Matt') {
             data = {
-                vi: 43,
-                a: 15,
-                ve: 6,
-                p: 24,
-                l: 4,
-                soc: 19,
-                sol: 290,
+                vi: Math.floor(Math.random() * 100),
+                a: Math.floor(Math.random() * 100),
+                ve: Math.floor(Math.random() * 100),
+                p: Math.floor(Math.random() * 100),
+                l: Math.floor(Math.random() * 100),
+                soc: Math.floor(Math.random() * 100),
+                sol: Math.floor(Math.random() * 100),
                 avg: 60
             }
         } else if (name === 'Briana') {
             data = {
-                vi: 43,
-                a: 19,
-                ve: 6,
-                p: 24,
-                l: 4,
-                soc: 19,
-                sol: 290,
+                vi: Math.floor(Math.random() * 100),
+                a: Math.floor(Math.random() * 100),
+                ve: Math.floor(Math.random() * 100),
+                p: Math.floor(Math.random() * 100),
+                l: Math.floor(Math.random() * 100),
+                soc: Math.floor(Math.random() * 100),
+                sol: Math.floor(Math.random() * 100),
                 avg: 73
             }
         }

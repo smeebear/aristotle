@@ -14,11 +14,9 @@ const useStyles = makeStyles(theme => ({
     marginTop: theme.spacing(1),
     marginLeft: 'auto',
     marginRight: 'auto',
-    // overflowX: 'auto',
     textAlign: 'center',
   },
   table: {
-    // minWidth: 650,
     width: '100%'
   },
   cell: {
@@ -43,31 +41,31 @@ export default function ResultsPage() {
                     <TableBody>
                         <TableRow>
                             <TableCell align="center">Visual</TableCell>
-                            <TableCell align="center">43</TableCell>
+                            <TableCell align="center">{Math.floor(Math.random() * 100)}</TableCell>
                         </TableRow>
                         <TableRow>
                             <TableCell align="center">Aural</TableCell>
-                            <TableCell align="center">159</TableCell>
+                            <TableCell align="center">{Math.floor(Math.random() * 100)}</TableCell>
                         </TableRow>
                         <TableRow>
                             <TableCell align="center">Verbal</TableCell>
-                            <TableCell align="center">6</TableCell>
+                            <TableCell align="center">{Math.floor(Math.random() * 100)}</TableCell>
                         </TableRow>
                         <TableRow>
                             <TableCell align="center">Physical</TableCell>
-                            <TableCell align="center">24</TableCell>
+                            <TableCell align="center">{Math.floor(Math.random() * 100)}</TableCell>
                         </TableRow>
                         <TableRow>
                             <TableCell align="center">Logical</TableCell>
-                            <TableCell align="center">4</TableCell>
+                            <TableCell align="center">{Math.floor(Math.random() * 100)}</TableCell>
                         </TableRow>
                         <TableRow>
                             <TableCell align="center">Social</TableCell>
-                            <TableCell align="center">19</TableCell>
+                            <TableCell align="center">{Math.floor(Math.random() * 100)}</TableCell>
                         </TableRow>
                         <TableRow>
                             <TableCell align="center">Solitary</TableCell>
-                            <TableCell align="center">290</TableCell>
+                            <TableCell align="center">{Math.floor(Math.random() * 100)}</TableCell>
                         </TableRow>
                     </TableBody>
                 </Table>
