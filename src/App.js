@@ -13,6 +13,7 @@ import Video from './components/learning/Video';
 import Reading from './components/learning/Reading';
 import Speaking from './components/learning/Speaking';
 import LoadingScreen from 'react-loading-screen';
+import logo from './img/logo.png'
 
 class App extends Component {
 
@@ -21,20 +22,24 @@ class App extends Component {
     this.state = {
       loading: true
     }
+    this.notLoading = this.notLoading.bind(this);
+  }
+
+  notLoading() {
+    this.setState(() => {
+      return {loading: false}
+    })
   }
 
   componentDidMount(){
-
-    this.setState((state, props) => {
-      return {loading: false}
-    })
+    setTimeout(this.notLoading, 3000)
   }
 
   render (){
     return (
       <LoadingScreen
         loading={this.state.loading}
-        logoSrc='./img/logo.png'
+        logoSrc={logo}
       >
         <Router>
           <NavBar title={ "Aristotle" } />
