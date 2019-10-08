@@ -37,40 +37,22 @@ export default class Parent extends Component {
     };
 
     handleChild = (name) => {
-        var data = {}
+        var data = {
+            vi: Math.floor(Math.random() * 100),
+            a: Math.floor(Math.random() * 100),
+            ve: Math.floor(Math.random() * 100),
+            p: Math.floor(Math.random() * 100),
+            l: Math.floor(Math.random() * 100),
+            soc: Math.floor(Math.random() * 100),
+            sol: Math.floor(Math.random() * 100),
+            avg: 0
+        }
         if (name === 'Sam') {
-            data = {
-                vi: Math.floor(Math.random() * 100),
-                a: Math.floor(Math.random() * 100),
-                ve: Math.floor(Math.random() * 100),
-                p: Math.floor(Math.random() * 100),
-                l: Math.floor(Math.random() * 100),
-                soc: Math.floor(Math.random() * 100),
-                sol: Math.floor(Math.random() * 100),
-                avg: 97
-            }
+            data.avg = 97;
         } else if (name === 'Matt') {
-            data = {
-                vi: Math.floor(Math.random() * 100),
-                a: Math.floor(Math.random() * 100),
-                ve: Math.floor(Math.random() * 100),
-                p: Math.floor(Math.random() * 100),
-                l: Math.floor(Math.random() * 100),
-                soc: Math.floor(Math.random() * 100),
-                sol: Math.floor(Math.random() * 100),
-                avg: 60
-            }
+            data.avg = 60;
         } else if (name === 'Briana') {
-            data = {
-                vi: Math.floor(Math.random() * 100),
-                a: Math.floor(Math.random() * 100),
-                ve: Math.floor(Math.random() * 100),
-                p: Math.floor(Math.random() * 100),
-                l: Math.floor(Math.random() * 100),
-                soc: Math.floor(Math.random() * 100),
-                sol: Math.floor(Math.random() * 100),
-                avg: 73
-            }
+            data.avg = 73;
         }
         return (
             <Child data={data} />
