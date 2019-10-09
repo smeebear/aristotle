@@ -31,14 +31,14 @@ class App extends Component {
   }
 
   componentDidMount(){
-    setTimeout(this.notLoading, 3000)
+    setTimeout(this.notLoading, 2000)
   }
 
   render (){
 
     if(this.state.loading === true){
       return (
-        <div style={{textAlign: 'center'}} >
+        <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100%'}} >
           <img src={logo} alt='' width='400px' height='400px' />
         </div>
       )
