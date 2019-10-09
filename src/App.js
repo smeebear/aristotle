@@ -13,6 +13,7 @@ import Video from './components/learning/Video';
 import Reading from './components/learning/Reading';
 import Speaking from './components/learning/Speaking';
 import logo from './img/logo.png';
+import FadeIn from 'react-fade-in';
 
 class App extends Component {
 
@@ -39,7 +40,9 @@ class App extends Component {
     if(this.state.loading === true){
       return (
         <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100%'}} >
-          <img src={logo} alt='' width='400px' height='400px' />
+          <FadeIn>
+            <img src={logo} alt='' width='400px' height='400px' />
+          </FadeIn>
         </div>
       )
     }
