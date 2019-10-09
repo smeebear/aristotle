@@ -36,7 +36,6 @@ class App extends Component {
   }
 
   render (){
-
     if(this.state.loading === true){
       return (
         <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100%'}} >
@@ -51,18 +50,18 @@ class App extends Component {
       <Router>
         <NavBar title={ "Aristotle" } />
         <div style={{margin: 'auto', maxWidth: '1000px'}} >
-        <Route exact path='/' component={ExampleQuiz} />
-        <Route path='/results' component={ResultsVert} />
-        <Route path='/contact' component={Contact} />
-        <Route path='/thanks' component={ThankYou} />
-        <Route path='/parentdash' component={Parent} />
-        <Route path='/teacherdash' component={Teacher} />
-        <Route path='/learning' component={Learning} />
-        <Route path='/learning/visual' component={Video} />
-        <Route path='/learning/aural' component={Reading} />
-        <Route path='/learning/verbal' component={Speaking} />
-        <Route path='/learning/physical' component={Speaking} />
-        <Route path='/learning/logical' component={Reading} />
+          <Route exact path='/' component={ExampleQuiz} />
+          <Route path='/results' component={ResultsVert} />
+          <Route path='/contact' component={Contact} />
+          <Route path='/thanks' component={ThankYou} />
+          <Route path='/parentdash' component={Parent} />
+          <Route path='/teacherdash' component={Teacher} />
+          <Route path='/learning' component={Learning} />
+          <Route path='/learning/visual' component={Video} />
+          <Route path='/learning/aural' component={Reading} />
+          <Route path='/learning/verbal' component={Speaking} />
+          <Route path='/learning/physical' component={Speaking} />
+          <Route path='/learning/logical' component={Reading} />
         </div>
       </Router>
     );
