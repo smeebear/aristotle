@@ -32,14 +32,14 @@ class App extends Component {
   }
 
   componentDidMount(){
-    setTimeout(this.notLoading, 2000)
+    setTimeout(this.notLoading, 1600)
   }
 
   render (){
     if(this.state.loading === true){
       return (
         <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100%'}} >
-          <FadeIn>
+          <FadeIn transitionDuration={'750'}>
             <img src={logo} alt='' width='400px' height='400px' />
           </FadeIn>
         </div>
